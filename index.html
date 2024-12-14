@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <header>
+        <script src="scripts.js"></script>
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+        <!-- Milligram CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <div class="container">
+            <h1>Movie database</h1>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+
+            <div class="column column-30">
+                <p>Movies</p>
+                <ul id="movie-list"></ul>
+                <button id="delete-btn" onclick="deleteSelected()">Delete selected movies</button>
+
+            </div>
+            <hr>
+
+            <div class="column column-60 column-offset-5">
+                <div class="single-input">
+                    <label>Title</label>
+                    <input type="text" id="title-inpt"> 
+                </div>
+                <div class="single-input">
+                    <label>Year</label>
+                    <input type="text" id="year-inpt"> 
+                </div>
+                <div class="single-input">
+                    <label>Actors</label>
+                    <input type="text" id="actors-inpt"> 
+                </div>
+                <hr>
+                <button id="add-btn" onclick="addMovie()">Add</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <h4>copyrights not reserved</h4>
+        </div>
+    </footer>
+</body>
+</html>
